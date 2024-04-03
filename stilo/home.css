@@ -52,16 +52,94 @@
     transition: all 0.3s;
 
   }
+  .menu-principal ul li a:hover{
+    color: var(--color-primary);
+  }
+  /*config menu pelicula*/
+  .dropdow-menu-película{
+    display: none;
+  }
+  .menu-principal ul li:hover .dropdow-menu-película{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--color-black);
+  }
+  .dropdow-menu-película ul{
+    display: block;
+    margin: 10px;
+  }
+  .dropdow-menu-película ul li{
+    width: 200px;
+    padding: 10px;
+  }
+  /*config menu cabos*/
+  .dropdow-submenu-cabo{
+    display: none;
+  }
+  .menu-principal ul li:hover .dropdow-submenu-cabo{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--color-black);
+  }
+  .dropdow-submenu-cabo ul{
+    display: block;
+    margin: 10px;
+  }
+  .dropdow-submenu-cabo ul li{
+    width: 200px;
+    padding: 10px;
+  }/*config menu carregadores*/
+  .dropdow-submenu-carregador{
+    display: none;
+  }
+  .menu-principal ul li:hover .dropdow-submenu-carregador{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--color-black);
+  }
+  .dropdow-submenu-carregador ul{
+    display: block;
+    margin: 10px;
+  }
+  .dropdow-submenu-carregador ul li{
+    width: 200px;
+    padding: 10px;
+  }
+  /*config menu telas*/
+  .dropdow-submenu-tela{
+    display: none;
+  }
+  .menu-principal ul li:hover .dropdow-submenu-tela{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--color-black);
+  }
+  .dropdow-submenu-tela ul{
+    display: block;
+    margin: 10px;
+  }
+  .dropdow-submenu-tela ul li{
+    width: 200px;
+    padding: 10px;
+  }
+  .fas{
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+  }
   .user{
     color: var(--color-white);
     display: flex;
     left: 100%;
     font-size: 50px;
-  
-  }
-  .categoria{
-    font-size: 50px;
-    float: right;
   }
   a#circle{
     width: 75px;
@@ -69,12 +147,5 @@
     border-radius: 50%;
     background-color: var(--color-black-1);
     justify-content: center;
-    align-items: center;
-  }
-  footer{
-    background-color: var(--color-black-1);
-    color: var(--color-white);
-    height: 50px;
-    text-align: center;
     align-items: center;
   }
