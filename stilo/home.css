@@ -2,12 +2,19 @@
     font-family: 'future';
     src: url(../fontes/LT\ Sonoma\ 2\ \(1\).otf);
 }
+@font-face {
+  font-family: 'saeada';
+  src: url(../fontes/lt_saeada/LTSaeada-Medium.otf);
+}
 :root {
-    --color-primary: #0073ff;
+    --color-primary: #049DD9;
     --color-white: #e9e9e9;
     --color-black: #141d28;
-    --color-black-1: #212b38;
+    --color-black-1: #023E73;
     --color-fundo: #BAEFF6;
+    --color-pos:#00EEFD;
+    --color-pre:#001A44;
+
   }
   
   * {
@@ -28,12 +35,12 @@
    
   }
   .logo{
-    color: var(--color-primary);
+    color: var(--color-black-1);
     font-size: 50px;
     font-family: 'future';
   }
   .logo span{
-    color: var(--color-white);
+    color: var(--color-fundo);
   }
   .menu-principal{
     background-color: var(--color-black);
@@ -63,7 +70,7 @@
 
   }
   .menu-principal ul li a:hover{
-    color: var(--color-primary);
+    color: var(--color-pos);
   }
   /*config menu pelicula*/
   .dropdow-menu-película{
@@ -146,7 +153,7 @@
     padding-top: 3px;
   }
   .user{
-    color: var(--color-white);
+    color: var(--color-fundo);
     display: flex;
     left: 100%;
     font-size: 50px;
@@ -155,21 +162,47 @@
     width: 75px;
     height: 75px;
     border-radius: 50%;
-    background-color: var(--color-black-1);
+    background-color: var(--color-pre);
     justify-content: center;
     align-items: center;
+    transition: 0.5s;
+  }
+  a#circle:hover{
+    box-shadow: 0 0 15px var(--color-pos);
   }
   /*config do corpo do site*/
   div img{
       float: right;
       margin-top: 80px;
       margin-right: 2px;
-      box-shadow: 6px -1px 15px 6px;
+      box-shadow: 2px 3px 14px black;
+      border-radius: 0 0 10px 10px;
+      opacity: o;
+  }
+  div img:hover{
+    opacity: 0.9;
   }
   .bem-vindo{
+    text-align: justify;
+    font-family: 'future';
+    font-size: 80px;
+    color: var(--color-pre);
+    margin-left: 40px;
     display: block;
     padding-top: 150px;
   }
+  .Start{
+    font-size: 50px;
+    color: var(--color-pre);
+    margin-left: 90px;
+    padding-top: 40px;
+    font-family: 'future';
+  }
   .qualidade{
-    padding-top: 150px;
+    font-family: 'saeada';
+    color: var(--color-black);
+    font-size: 35px;
+    padding-top:150px;
+    align-items: center;
+    margin-left: 90px;
   }
